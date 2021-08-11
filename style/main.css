@@ -111,10 +111,17 @@ header {
 
 /* ----- TABLE ----- */
 
+#transaction {
+    width: 100%;
+    display: block;
+    overflow-x: auto; /* quando for necessário, criar a rolagem do eixo x */
+}
+
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #888da1;
+    
 }
 
 table thead tr th:first-child,
@@ -172,7 +179,17 @@ footer {
 
 /* ----- RESPONSIVE -----*/
 
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%; /* 14px */
+    }
 
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
 
 
 
